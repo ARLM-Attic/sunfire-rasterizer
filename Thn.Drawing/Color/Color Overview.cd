@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Visual Overview&#xD;&#xA;----------------------------&#xD;&#xA;Author: Nguyễn, M. Hải&#xD;&#xA;Version: Jan 15, 2008">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Color class present for common RGB color. All other color spaces are implicitly convertible to this Color class.&#xD;&#xA;&#xD;&#xA;Predefined colors are contained in class Colors.">
+    <Position X="2.708" Y="1.573" Height="0.927" Width="6.648" />
+  </Comment>
+  <Comment CommentText="Other common color spaces supported in SunFire:">
+    <Position X="2.74" Y="4.792" Height="0.344" Width="6.71" />
+  </Comment>
+  <Class Name="Thn.Drawing.Color">
+    <Position X="0.5" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAAAAAgAEAIAAgAAAAAAAAFAAgAAAoHAAAAA=</HashCode>
+      <FileName>Color\Base\Color.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.Cymk">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgEAAQAAAAAQAAkAJAQAAAEAAAMABAAABAAACIAgAA=</HashCode>
+      <FileName>Color\Color spaces\Cymk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.Hsl">
+    <Position X="4.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>iAAQAABAAAAAQAAEAAAQgAAEAgAFgBBCABAAAAAAAAA=</HashCode>
+      <FileName>Color\Color spaces\Hsl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.Hsb">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAIQAABAAAAAAAAEgAAQAAAAAAAAgJAAAAAAAAAAAqA=</HashCode>
+      <FileName>Color\Color spaces\Hsb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.Yuv">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAQAQAAAACAAJAAABAAAAASIiA=</HashCode>
+      <FileName>Color\Color spaces\Yuv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.CieLab">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAQCAAEgAAQAAAAAAAAAJAAAAAAIAUAAiA=</HashCode>
+      <FileName>Color\Color spaces\CieLab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.ColorSpaces.CieXyz">
+    <Position X="4.5" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAQAAAAACAAAJAAABAAAAAAYiE=</HashCode>
+      <FileName>Color\Color spaces\CieXyz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Rasterizer overview&#xD;&#xA;Dec 18, 2007">
+    <Position X="0.5" Y="0.5" Height="0.448" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Basic interface for rasterizer.&#xD;&#xA;Rasterizer using for rasterize an polygon into row data, and filling it. It support gamma correction. And it not perform transform.">
+    <Position X="2.323" Y="0.833" Height="0.948" Width="2.658" />
+  </Comment>
+  <Comment CommentText="There are two approach to filling an polygon using rasterizer:&#xD;&#xA;     + Direct approach :  call method FillPolygon to rasterize polygon and render to buffer directly in one pass&#xD;&#xA;    + Approach 2: call the following methods sequentially to complete a renderation&#xD;&#xA;             + Set current paint to Paint property&#xD;&#xA;             + Begin() to start renderation process&#xD;&#xA;             + LineTo(), MoveTo(), AddPolygon , AddCurve(), etc. to rasterize the vectors to renderation mask&#xD;&#xA;            + Finish() to end renderation process and render mask to buffer&#xD;&#xA;       ">
+    <Position X="2.323" Y="1.865" Height="2.594" Width="2.648" />
+  </Comment>
+  <Comment CommentText="Analytical rasterizer implemetation, inherited class should be filling the result has been rasterized by base class">
+    <Position X="5.122" Y="0.854" Height="1.51" Width="1.95" />
+  </Comment>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.AnalyticalRasterizerBase" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAYECIACQEASACACgMgBBEIAAEIEQAYAABAEARLRCg=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\AnalyticalRasterizer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.ColorRasterizer" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\ColorRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.GradientRasterizer" Collapsed="true">
+    <Position X="3.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAQAAAAAEIgACACAgAAARAAAAAMAAAIEM=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\Gradient\GradientRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.TranformableRasterizer" Collapsed="true">
+    <Position X="1" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAEAAAAAAAAIAIEAAAACAABAAAAAAAIAAAIA=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\TranformableRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.TextureRasterizer" Collapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAEEIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\TextureRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.LinearGradientRasterizer" Collapsed="true">
+    <Position X="2" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQBAEAAAAAACAEAAEEIAAgAECAAAAAAAAAEEAA=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\Gradient\LinearGradientRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.RadialGradientRasterizer" Collapsed="true">
+    <Position X="4.25" Y="9" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEARBAAAAAAAAEEIOgAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Drawing\Rasterizer\Analytic\Implementation\Gradient\RadialGradientRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.MaskRasterizer" Collapsed="true">
+    <Position X="6.25" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAACQAASAAACCEAAAAAAwAIEQAIAAABAARLRCg=</HashCode>
+      <FileName>Drawing\Rasterizer\Mask Rasterizer\MaskRasterizer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Thn.Drawing.Rasterizers.Analytical.AnalyticalAlgorithmImplement" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAACAIUAABAAAQQAAICAKAFEgIEAAACBABQQ=</HashCode>
+      <FileName>Drawing\Rasterizer\Base\AnalyticalAlgorithm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Thn.Drawing.IPolygonRasterizer">
+    <Position X="0.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAAQAAAAAACAAAAAAAAAAIEAAIAAAAAAALRAg=</HashCode>
+      <FileName>Drawing\Rasterizer\Base\IPolygonRasterizer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

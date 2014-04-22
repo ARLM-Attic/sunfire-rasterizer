@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD552950-DF16-458E-B870-8A5BB9BB6546}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Thn.Drawing</RootNamespace>
+    <AssemblyName>Thn.Drawing</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Thn.Drawing.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Thn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BinRef\Thn.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffer\BgrPixelBuffer.cs" />
+    <Compile Include="Buffer\IPixelBuffer.cs" />
+    <Compile Include="Buffer\MaskBuffer.cs" />
+    <Compile Include="Buffer\PixelBuffer.cs" />
+    <Compile Include="Buffer\PixelFormat.cs" />
+    <Compile Include="Color\Base\Color.cs" />
+    <Compile Include="Color\Base\Colors.cs" />
+    <Compile Include="Color\Color spaces\CieLab.cs" />
+    <Compile Include="Color\Color spaces\CieXyz.cs" />
+    <Compile Include="Color\Color spaces\ColorConverter.cs" />
+    <Compile Include="Color\Color spaces\ColorWheel.cs" />
+    <Compile Include="Color\Color spaces\Cymk.cs" />
+    <Compile Include="Color\Color spaces\Hsb.cs" />
+    <Compile Include="Color\Color spaces\Hsl.cs" />
+    <Compile Include="Color\Color spaces\Yuv.cs" />
+    <Compile Include="Matrix\Matrix3x3.cs" />
+    <Compile Include="Matrix\Matrix3x3Stack.cs" />
+    <Compile Include="Drawing\Drawer\Drawer.cs" />
+    <Compile Include="Drawing\Drawer\DrawerState.cs" />
+    <Compile Include="Drawing\Drawer\IBufferDrawer.cs" />
+    <Compile Include="Drawing\Drawer\IDrawer.cs" />
+    <Compile Include="Drawing\Drawer\MaskDrawer.cs" />
+    <Compile Include="Drawing\Internal structures\AlphaCache.cs" />
+    <Compile Include="Drawing\Internal structures\RawPolygonList.cs" />
+    <Compile Include="Drawing\Path\Path.cs" />
+    <Compile Include="Drawing\Path\PathCommands.cs" />
+    <Compile Include="Drawing\Path\PathGenerator.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\AnalyticalRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\DataStruture\CellData.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\DataStruture\RowData.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\ColorRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\Gradient\GradientRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\Gradient\LinearGradientRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\Gradient\RadialGradientRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\TextureRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Analytic\Implementation\TranformableRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Base\AnalyticalAlgorithm.cs" />
+    <Compile Include="Drawing\Rasterizer\Base\IPolygonRasterizer.cs" />
+    <Compile Include="Drawing\Rasterizer\Base\WindingRule.cs" />
+    <Compile Include="Drawing\Rasterizer\Mask Rasterizer\MaskRasterizer.cs" />
+    <Compile Include="Exception\DrawingException.cs" />
+    <Compile Include="Exception\FillingException.cs" />
+    <Compile Include="Exception\NotMatchPaintTypeException.cs" />
+    <Compile Include="Gamma Correction\IGammaCorrector.cs" />
+    <Compile Include="Gamma Correction\PowerGammaCorrector.cs" />
+    <Compile Include="Paint\Fill\Fill.cs" />
+    <Compile Include="Paint\Fill\FillingRule.cs" />
+    <Compile Include="Paint\Fill\Fills.cs" />
+    <Compile Include="Paint\Paint\Base\Paint.cs" />
+    <Compile Include="Paint\Paint\Base\PaintMaterial.cs" />
+    <Compile Include="Paint\Paint\Color\ColorPaint.cs" />
+    <Compile Include="Paint\Paint\Gradient\Color ramp\ColorRamp.cs" />
+    <Compile Include="Paint\Paint\Gradient\Color ramp\ColorStop.cs" />
+    <Compile Include="Paint\Paint\Gradient\GradientPaint.cs" />
+    <Compile Include="Paint\Paint\Gradient\GradientStyle.cs" />
+    <Compile Include="Paint\Paint\Gradient\LinearGradient.cs" />
+    <Compile Include="Paint\Paint\Gradient\LinearGradientMode.cs" />
+    <Compile Include="Paint\Paint\Gradient\RadialGradient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Color\Color Overview.cd" />
+    <None Include="Drawing\Rasterizer\Rasterizer.cd" />
+    <None Include="Paint\Paints.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+    <Content Include="License_GPLv3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -37,9 +37,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DemoHelpers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("THN Solutions LLC.")]
 [assembly: AssemblyProduct("DemoHelpers")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2008")]
+[assembly: AssemblyCopyright("Copyright © THN Solutions LLC. 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

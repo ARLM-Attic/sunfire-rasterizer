@@ -39,7 +39,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("THN Solutions LLC. (www.ThnSolutions.com)")]
 [assembly: AssemblyProduct("SunFire Graphic Engine - Vector Rasterizer module")]
-[assembly: AssemblyCopyright("Copyright © Thiên Hải Ngọc 2008-2014 www.ThnSolutions.com")]
+[assembly: AssemblyCopyright("Copyright © THN Solutions LLC. 2008-2014 www.ThnSolutions.com")]
 [assembly: AssemblyTrademark("SunFire Vector Graphic Engine")]
 [assembly: AssemblyCulture("")]
 
